@@ -143,3 +143,132 @@ ls -la
 [](src/05_ls.png)
 
 <div id='6'></div>
+
+### 6. Find, copy, move,... files/directories
+- The **find** command allows you to search for files for which you know the approximate filenames.
+* Syntax: 
+```
+find . -name mydata\*
+    . is indicates the current directory.
+    -name if you want the search for a word or phrase to be case insensitive.
+```
+
+![](src/06_find.png)
+
+* Syntax:
+```
+locate -b 'mydata.txt'
+```
+
+![](src/06_locate.png)
+
+- The **which** command returns the absolute path of the executable that is called when a command is issued. 
+* Syntax: 
+```
+which -a firefox
+```
+- The **whereis** command is used to find out where the binary, source, and man page files for a command are located.
+```
+whereis nmap
+```
+
+![](src/06_which_where.png)
+
+- **cp** is a command to copy files and directories.
+- **mv** is used to move one or more files or directories from one place to another in a file system like UNIX
+* Syntax:
+```
+cp [OPTIONS] SOURCE... DESTINATION
+mv [OPTIONS] SOURCE... DESTINATION
+```
+
+![](src/06_cp_mv.png)
+
+<div id='7'></div>
+
+### 7. System Decentralization
+- **chmod** modifies the permissions of the file specified by file name to the permissions specified by permissions.
+* Syntax: 
+```
+chmod options permissions <file_name>
+```
+Options:
+```
+* u: user
+* g: group
+* o: owner  
+```
+Permissions:  
+```
+* r: read (4)
+* w: write (2)
+* x: excute (1)
+```
+- Example:
+```
+chmod u+x hello.sh
+or
+chmod 700 hello.sh
+```
+
+![](src/07_chmod.png)
+
+- **chown** used to change the owner. 
+- **chgrp** used to change the group.
+* Syntax: 
+```
+chown OWNER FILE
+chgrp GROUP FILE
+```
+![](src/07_chown_chgrp.png)
+
+<div id='8'></div>
+
+### 8. Editors command
+
+- **vi** is one of the best ways to editing files using the screen-oriented text editor.
+- **vim** comes from **vi** Improved because it is the successor of an older editor called **vi**.
+- **nano** is a newer text editor in Linux systems. It’s simpler and easier to use than **vim**.
+
+* Syntax: 
+```
+vi filename
+gedit filename
+nano filename
+```
+
+<div id='9'></div>
+
+### 9. Mount/ Unmount
+#### 9.1 Mount
+- **mount** command to attach (mount) file systems and removable devices such as USB flash drives at a particular mount point in the directory tree.
+
+* Syntax: 
+```
+mount [OPTION...] DIRECTORY
+mount [OPTION...] DEVICE_NAME
+```
+
+![](src/09_mount.png)
+
+#### 9.2 Umount
+- **unmount** to detach a mounted file system.
+
+* Syntax: 
+```
+umount DEVICE_NAME
+umount DIRECTORY
+```
+
+![](src/09_umount.png)
+
+<div id='10'></div>
+
+### 10. Sympolic Links
+- **ln** is a command-line utility for creating links between files. To create a symbolic link, use the *-s (--symbolic)* option.
+* Syntax: 
+```
+ln -s SOURCE_FILE SYMBOLIC_LINK
+```
+
+![](src/10_symlink.png)
