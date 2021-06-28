@@ -71,3 +71,75 @@ fdisk -l
 ```
 lscpu
 ```
+![](src/03_cpu.png)
+
+#### 3.2 RAM 
+
+- The most popular command in order to check your RAM on Linux is to use the **free** command.
+* Syntax: 
+```
+free -h
+```
+
+![](src/03_ram.png)
+
+#### 3.3 Network
+
+- **netstat** is a command line tool for monitoring incoming and outgoing network packets statistics as well as interface statistics. 
+* Syntax: 
+```
+netstat
+```
+
+![](src/03_netstat.png)
+
+```
+netstat -lnp 
+    * -lnp: Listen all active listening ports connection
+```
+
+![](src/03_netstat2.png)
+
+<div id='4'></div>
+
+### 4. Process Monitor
+
+- The **top** command used to dipslay all the running and active real-time processes in ordered list and updates it regularly.
+* Syntax: 
+```
+top
+```
+
+![](src/04_top.png)
+
+-  **Htop** is a much advanced interactive and real time Linux process monitoring tool.
+* Syntax:
+```
+htop
+```
+
+![](src/04_htop.png)
+
+- **ps** command will report a snapshot of the current processes.
+* Syntax:
+
+```
+ps -aux
+    * -aux: Print all process on the server
+```
+
+![](src/04_ps.png)
+
+<div id='5'></div>
+
+### 5. List files/ directories
+- The **ls** command also accepts some flags which are additional information that changes how files or directories are listed in your terminal.
+* Syntax: 
+```
+ls -la
+    -la: to list files or directories in a table format with extra information including hidden files or directories
+```
+
+[](src/05_ls.png)
+
+<div id='6'></div>
