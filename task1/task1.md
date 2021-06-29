@@ -272,3 +272,85 @@ ln -s SOURCE_FILE SYMBOLIC_LINK
 ```
 
 ![](src/10_symlink.png)
+
+<div id='11'></div>
+
+### 11. Hard Links
+
+* Syntax:
+```
+ln SOURCE_FILE SYMBOLIC_LINK
+```
+
+![](src/10_hardlink.png)
+
+<div id='12'></div>
+
+### 12. Compressed/ Depressed
+#### 12.1 zip 
+- The **zip** command is for .zip files and is used to compress one or more files into .zip format files.
+* Syntax: 
+```
+zip [parameter] [Target compressed file.zip] [Source File]
+```
+
+![](src/12_zip.png)
+
+- The **unzip** command is used to compress and compress the compressed package in .zip format.
+
+* Syntax: 
+```
+unzip [parameter] [Unzip file name.zip]
+```
+
+![](src/12_unzip.png)
+
+#### 12.2 tar 
+
+- **tar** combines compression and decompression together, but uses different parameters.
+
+* Syntax: 
+```
+tar [parameter] [Compressed file name] [Uncompressed file name]
+    -c Create a new compressed file.
+    -f<backup file>  Specify the compressed file.
+    -v Display the instruction execution process.
+    -x Release the file from the backup file, that is, unzip the file.
+    -z Generate compressed files with tar and compress them with gzip.
+```
+![](src/12_tar_comp.png)
+
+![](src/12_tar_dess.png)
+
+<div id='13'></div>
+
+### 13. Bandwidth monitoring
+- **bmon** is also a straightforward command line tool for monitoring network bandwidth utilization and a rate estimator, in Linux.
+* Syntax: 
+```
+# apt install bmon
+# bmon
+```
+
+![](src/13_bmon.png)
+
+<div id='14'></div>
+
+### 14. nmap, telnet, ping, ssh, transfer files from local to public host
+#### 14.1 nmap
+- **nmap** - Network exploration tool and security / port scanner
+* Syntax: 
+```
+nmap [Scan Type...] [Options] target
+```
+Options:
+```
+    -A: scan to find out OS Information 
+    -sA: scan to detect firewall settings
+    -sV: find information about service versions
+    -p: scan ports
+    -sP: scan to see which servers are active
+    -T4: to scan faster
+```
+
+![](src/14_nmap.png)
