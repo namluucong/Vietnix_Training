@@ -134,3 +134,52 @@ A reverse proxy operates by:
 - **Security**: Apache and NGINX handle these various security requirements is beyond the scope of this page; however, it is fair to say that Apache and NGINX are both designed to be secure by default.
 - **Documentation** Apache and NGINX are both very well-documented platforms.
 
+### Demo Configure DNS
+
+- Install bind:
+```
+yum update -y
+yum install bind* -y
+```
+- Configure DNS Server:
+```
+vi /etc/named.conf
+```
+![](src/demo_named_conf.png)
+
+- Create Forward and Reverse Zone:
+```
+vi /var/named/forward.cien
+vi /var/named/reverse.cien
+```
+![](src/demo_create_zone.png)
+
+- Start DNS Server Service: 
+```
+systemctl enable named
+systemctl start named
+```
+- Configure Firewall: 
+```
+firewall-cmd --permanent --add-port=53/tcp
+firewall-cmd --permanent --add-port=53/udp
+firewall-cmd --reload
+```
+- Check DNS Server and Zone: 
+![](src/demo_named_check.png)
+
+- Add DNS Server: 
+```
+vi /etc/sysconfig/network-scripts/ifcfg-ens33
+vi /etc/resolv.conf
+```
+![](src/demo_dns_add.png)
+
+- Test DNS Server: 
+```
+dig cien.info
+nslookup cien.info
+```
+![](src/demo_server_check.png)
+
+![](src/demo_client_check.png)
