@@ -7,7 +7,6 @@
 1. <a href='#4'> Hosting, VPS, Server
 1. <a href='#5'> Reverse Proxy
 1. <a href='#6'> Compare Nginx and Apache
-1. <a href='#7'> Demo
 
 <div id='1'></div>
 
@@ -83,6 +82,13 @@
 
 ### Types of Server: 
 ![](src/04_types_server.png)
+- File server: Used to transfer files from one server to another based on a network connection: LAN, Internet, etc. 
+- Mail server: Support sending and receiving mail (gmail, yahoo mail, yandex, amazon email service). 
+- Web server: is a server with the function of storing information and data of the website, creating a connection environment for customers to access the website easily. 
+- Application server:Used to run ERP management software, CRM software in the business, can also be understood as a server providing web services, mail, file server, ...). 
+- Database server: A dedicated server used for database administration. On the server, professional database management software is installed: SQL server, MySQL, Oracle... 
+- Domain server: Is a domain name resolution system 
+
 
 ### VPS
 - Virtual Private Server (VPS) is a virtual server, created by dividing the physical server into many other servers. 
@@ -111,6 +117,8 @@ A reverse proxy operates by:
 
 ![](src/05_reverse_proxy.png)
 
+<div id='6'></div>
+
 # 6. Nginx vs Apache
 - **Nginx and Apache** are two of the biggest open source web services worldwide, handling more than half of the internet’s total traffic. They’re both designed to handle different workloads and to complement various types of software, creating a comprehensive web stack.
 
@@ -126,7 +134,3 @@ A reverse proxy operates by:
 - **Security**: Apache and NGINX handle these various security requirements is beyond the scope of this page; however, it is fair to say that Apache and NGINX are both designed to be secure by default.
 - **Documentation** Apache and NGINX are both very well-documented platforms.
 
-<div id='7'></div>
-
-# 7. Demo    
-## Configure DNS with CentOS 7
