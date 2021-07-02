@@ -331,8 +331,25 @@ tar [parameter] [Compressed file name] [Uncompressed file name]
 # apt install bmon
 # bmon
 ```
-
 ![](src/13_bmon.png)
+
+- **vnstat** is a console-based network traffic monitoring tool design for Linux and BSD. It will keep a log of the network traffic for selected network interfaces.
+- Install vnstat: `apt install vnstat`
+> Configure vnstat interface: `vi /etc/vnstat.conf`  
+![](src/13_vnstat_conf.png)
+
+- Syntax: 
+```
+vnstat [OPTIONS]
+
+        -h: check hourly
+        -d: check daily
+        -t: check time
+```
+
+![](src/13_vnstat.png)
+
+
 
 <div id='14'></div>
 
