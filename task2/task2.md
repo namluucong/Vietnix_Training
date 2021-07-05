@@ -82,12 +82,12 @@
 
 ### Types of Server: 
 ![](src/04_types_server.png)
-- File server: Used to transfer files from one server to another based on a network connection: LAN, Internet, etc. 
-- Mail server: Support sending and receiving mail (gmail, yahoo mail, yandex, amazon email service). 
-- Web server: is a server with the function of storing information and data of the website, creating a connection environment for customers to access the website easily. 
-- Application server:Used to run ERP management software, CRM software in the business, can also be understood as a server providing web services, mail, file server, ...). 
-- Database server: A dedicated server used for database administration. On the server, professional database management software is installed: SQL server, MySQL, Oracle... 
-- Domain server: Is a domain name resolution system 
+- **File server**: Used to transfer files from one server to another based on a network connection: LAN, Internet, etc. 
+- **Mail server**: Support sending and receiving mail (gmail, yahoo mail, yandex, amazon email service). 
+- **Web server**: is a server with the function of storing information and data of the website, creating a connection environment for customers to access the website easily. 
+- **Application server**: Used to run ERP management software, CRM software in the business, can also be understood as a server providing web services, mail, file server, ...). 
+- **Database server**: A dedicated server used for database administration. On the server, professional database management software is installed: SQL server, MySQL, Oracle... 
+- **Domain server**: Is a domain name resolution system 
 
 
 ### VPS
