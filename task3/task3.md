@@ -224,3 +224,6 @@ php artisan key:generate
 > Result: 
 
 ![](src/laravel_result.png)
+
+# **~~~THE END~~~**
+[Back to training task](https://github.com/namluucong/Vietnix_Training/blob/main/README.md)
